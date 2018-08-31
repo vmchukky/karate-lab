@@ -29,10 +29,14 @@ See the power of karate
 - complex assertions
 - data driven testing
 - flexible logging
-- test doubles (mocking services)
 
 (TBD)
+## Exercise 4
+Didn't I promise karate for A-to-Z?
+- performance testing: karate-gatling
+- UI testing: karate-selenium
+- mocking services: test doubles
 
+(TBD)
 ## Demo
 karate UI
-
