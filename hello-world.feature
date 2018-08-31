@@ -1,16 +1,8 @@
-## Hello World, really?#@!
-Here is the [hello-world.feature](hello-world.feature).  Lets take a closer look:
-
-Every feature will have a name, and one or more Scenarios
-```
 Feature: Hello Karate
 
 Scenario: demonstrate JSON assertions
-```
-A Scenario can have `Given`, `When`, `And`, `Then` 
-``` 
-# as expected is the prefix for comment lines
-* def theTestTool = 
+
+* def theTestTool =
 """
 {
   what: 'yet another web-service test automation tool',
@@ -36,10 +28,7 @@ A Scenario can have `Given`, `When`, `And`, `Then`
   }
 }
 """
-```
-how about some #ignore, #notnull, #object
-```
-Then match theTestTool contains 
+Then match theTestTool contains
 """
 {
   BUT: '#ignore',
@@ -47,18 +36,11 @@ Then match theTestTool contains
   features: '#object'
 }
 """
-```
-for the love of #regex?
-```
-And match theTestTool.features contains 
+And match theTestTool.features contains
 """
 {
   assertions: '#regex .*beats json\\-schema.*',
   mock: '#string'
-} 
+}
 """
-```
-finally what good is a hello world without printing some message
-```
-And print 'Awesome karate simple example:', theTestTool.features.languageNeutral.example
-```
+And print 'Awesome karate simple example', theTestTool.features.languageNeutral.example

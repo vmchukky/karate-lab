@@ -20,6 +20,8 @@ Enough already, show me some code:
 
 (TBD)
 ## Exercise 2
+- json/xml first class citizenship, read/write from/to files
+- how to keep secrets out of tests
 - Switch configuration/profile (stage -vs- production)
 - Pick and choose (test cases, test suites and all that jargon): want to run only smoke tests -vs- full regression 
 
