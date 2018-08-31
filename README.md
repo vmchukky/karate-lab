@@ -2,50 +2,37 @@
 Material that can be used for a karate hands-on lab/workshop
 
 ## [karate](https://github.com/intuit/karate):
-``` 
-* def theTestTool = 
-"""
-{
-  what: 'yet another web-service test automation tool',
-  BUT: 'we already have curl, postman, rest-assured, cucumber, spock, jmeter/gatling (perf), <what-ever-other-tool> why one more',
-  YES: 'it is by-far the simplest tool to stitch a sequence of web-service calls and assert responses',
-  features: {
-    languageNeutral: {
-      syntax: 'simple to deal with HTTP, JSON, GraphQL or XML',
-      vocabulary: ['Given', 'When', 'And', 'Then'],
-      example: "
-        Given url 'https://duckduckgo.com'
-        And param q = 'intuit karate'
-        When method GET
-        Then status 200
-      ",
-      betterExample: 'is at https://gist.github.com/ptrthomas/d5a2d9e15d0b07e4f1b46f692a599f93'
-    },
-    reuse: 'call other test cases (features), javascript functions, Java code',
-    config: 'easy to switch environment specific configuration',
-    assertions: 'simple but powerful (beats json-schema), support for jsonpath, xmlpath, regex',
-    data: 'supports dynamic driven tests',
-    mock: 'test-doubles'
-  }
-}
-"""
+An open source framework for web service testing (err.., for any/A-to-Z testing, I can dream right).  If you are still not sold on karate, here is some good reading material:
+- First and foremost [beautiful documentation in karate README](https://github.com/intuit/karate)
+- Easy assertions even for complex json schema: [no problem](https://pbs.twimg.com/media/DDLHXlQUIAEKKP8.jpg)
+- [Data driven testing](https://github.com/intuit/karate#data-driven-tests) again the README
+- Want to mock (before dev team implemented) a service: [World's Smallest MicroService](https://github.com/intuit/karate/tree/master/karate-netty#the-worlds-smallest-microservice-) 
+- For all BDD purists: want to highlight [karate is not true BDD](https://medium.com/@ptrthomas/yes-karate-is-not-true-bdd-698bf4a9be39) (also mentioned in README)
 
-Then match theTestTool contains 
-"""
-{
-  BUT: '#ignore',
-  YES: '#notnull',
-  features: '#object'
-}
-"""
+Enough already, show me some code:
+- [say hello to world](hello-world.md)
+- [who cares about a hello world show me something real](README.md): See `Background`, `variables`, `request`, `header`, `params`, `response`, `status` (TBD)
 
-And match theTestTool.features contains 
-"""
-{
-  assertions: '#regex .*beats json\\-schema.*',
-  mock: '#string'
-} 
-"""
+## Exercise 1
+- Stitch a sequence of API calls as one test case (Scenario)
+- JUnit/TestNG integration 
+- Code reuse, mix and match features, with javascript and java code
 
-And print 'Awesome karate simple example:', theTestTool.features.languageNeutral.example
-```
+(TBD)
+## Exercise 2
+- Switch configuration/profile (stage -vs- production)
+- Pick and choose (test cases, test suites and all that jargon): want to run only smoke tests -vs- full regression 
+
+(TBD)
+## Exercise 3
+See the power of karate 
+- complex assertions
+- data driven testing
+- flexible logging
+- test doubles (mocking services)
+
+(TBD)
+
+## Demo
+karate UI
+
