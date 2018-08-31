@@ -10,7 +10,9 @@ An open source framework for web service testing (err.., for any/A-to-Z testing,
 - For all BDD purists: want to highlight [karate is not true BDD](https://medium.com/@ptrthomas/yes-karate-is-not-true-bdd-698bf4a9be39) (also mentioned in README)
 
 Enough already, show me some code:
-- [say hello to world](hello-world.md)
+- [say hello to world](hello-world.md), for the impatient:
+  - to run: `mvn test -Dtest=intro.HelloRunner`
+  - to view report: `open target/surefire-reports/TEST-intro.hello-world.html`
 - [who cares about a hello world show me something real](README.md): See `Background`, `variables`, `request`, `header`, `params`, `response`, `status` (TBD)
 
 ## Exercise 1
