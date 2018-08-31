@@ -29,6 +29,7 @@ Material that can be used for a karate hands-on lab/workshop
   }
 }
 """
+
 Then match theTestTool contains 
 """
 {
@@ -37,6 +38,7 @@ Then match theTestTool contains
   features: '#object'
 }
 """
+
 And match theTestTool.features contains 
 """
 {
@@ -44,5 +46,6 @@ And match theTestTool.features contains
   mock: '#string'
 } 
 """
-And print 'Awesome karate simple example', theTestTool.features.languageNeutral.example
+
+And print 'Awesome karate simple example:', theTestTool.features.languageNeutral.example
 ```
