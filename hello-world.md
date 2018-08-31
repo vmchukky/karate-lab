@@ -1,7 +1,10 @@
 ## Hello World, really?#@!
-Here is the [hello-world.feature](hello-world.feature).  Lets take a closer look:
+Here is the [hello-world.feature](src/test/java/intro/hello-world.feature).  To run the test
+```
+mvn test -Dtest=intro.HelloRunner
+```
 
-Every feature will have a name, and one or more Scenarios
+Lets take a closer look at the feature file.  Every feature will have a name, and one or more Scenarios
 ```
 Feature: Hello Karate
 
